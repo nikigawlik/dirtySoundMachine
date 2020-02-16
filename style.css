@@ -1,0 +1,111 @@
+* {
+    font-family: monospace;
+}
+
+/* game */
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: #aaa;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+main {
+    /* width: 100%; */
+    /* position: relative; */
+    width: max-content;
+    margin: 0 auto;
+}
+
+main canvas {
+    display: block;
+    margin: 10px auto;
+}
+
+.slider-area {
+    margin: 10px 0;
+    display: grid;
+    width: 100%;
+    max-width: 512px;
+    gap: 2px;
+}
+
+.slider-area>label {
+    grid-column: 1;
+    justify-self: start;
+}
+
+.slider-area>input[type=range] {
+    grid-column: 2;
+    justify-self: end;
+}
+
+.slider-area>input[type=number] {
+    width: 60px;
+    grid-column: 3;
+    justify-self: end;
+}
+
+/* inputs */
+
+button, input, select {
+    background: none;
+    background-color: #111;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    color: #aaa;
+}
+
+/* sliders */
+
+input[type=range] {
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 1px;
+    cursor: pointer;
+    background: #222;
+    border-radius: 2px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #444;
+}
+
+input[type=range]::-moz-range-track {
+    height: 1px;
+    cursor: pointer;
+    background: #222;
+    border-radius: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background: #aaa;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background: #aaa;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
